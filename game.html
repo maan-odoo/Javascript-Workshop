@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPC</title>
+    <style>
+        button {
+            width: 300px;
+            height: 50px;
+            /* padding: 10px; */
+            margin: 10px;
+            border-radius: 20px;
+        }
+        #BtnRock {
+            border: 1px solid cyan;
+            background-color: aliceblue;
+        }
+        #BtnRock:hover {
+            color: white;
+            background-color: cyan;
+        }
+        #BtnPaper {
+            border: 1px solid red;
+            background-color: aliceblue;
+        }
+        #BtnPaper:hover {
+            color: white;
+            background-color: red;
+        }
+        #BtnScisor {
+            border: 1px solid yellow;
+            background-color: aliceblue;
+        }
+        #BtnScisor:hover {
+            color: white;
+            background-color: yellow;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <center>
+        <h1>Rock Paper Scisor Game</h1>
+    
+    <div>
+        <button id="BtnRock" value="rock" onclick="RPC(this)">ROCK</button>
+        <button id="BtnPaper" value="paper" onclick="RPC(this)">Paper</button>
+        <button id="BtnScisor" value="scissors" onclick="RPC(this)">Scisor</button>
+    </div>
+    <div>
+        <h2 id="winner">Click to Play Game</h2>
+    </div>
+    <div class="point-table">
+        <h3>User Score = <span id="user-score">0</span></h3>
+        <h3>Computer Score = <span id="computer-score">0</span></h3>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h2 id="pmsg"></h2>
+</center>
+<script src="game.js"></script>
+</body>
+</html>
